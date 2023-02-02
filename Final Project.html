@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The World Map 🌝</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      }
+      h1 {
+        text-align: center;
+        color: #5328c2;
+        background: #d4cee6;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgba(154, 72, 231, 0.3);
+      }
+
+      h2 {
+        text-align: center;
+        color: #502fa3;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+
+      h3 {
+        color: #02393b;
+        font-weight: normal;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgba(154, 72, 231, 0.3);
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #7d51e8;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .whole {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 15px 50px;
+      }
+
+      .learn-more {
+        color: #092ca1;
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+
+      .addressdetails {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="whole">
+    <h1>The Globe in the Fist 🌎</h1>
+
+    <h2>Geography is just a click away!</h2>
+
+      <img
+      src="https://media.istockphoto.com/vectors/world-map-isolated-on-white-background-stock-vector-vector-id1178827500?b=1&k=20&m=1178827500&s=612x612&w=0&h=_2yKvFvOQIA12whBHORHiRmoSMxO4XFU_HO2zVI3n-c="
+      width="500"
+    />
+
+    <p>
+      The world is a huge place to live in. It has <strong>7 continents and 5 oceans</strong>.
+      Let's dive in to gain some knowledge about the places around!
+      <hr />
+      <h3>The Continents 🌕</h3>
+      <li>Asia</li>
+      <li>Africa</li>
+      <li>North America</li>
+      <li>South America</li>
+      <li>Australia</li>
+      <li>Europe</li>
+      <li>Antarctica</li>
+      <br />
+      <a href="https://en.wikipedia.org/wiki/Continent" target="_blank" class="learn-more">
+        <em>Click here to learn more about Continents</em> 
+      </a>
+
+      <h3>The Oceans 🌊</h3>
+      <li>Pacific Ocean</li>
+      <li>Indian Ocean</li>
+      <li>Arctic Ocean</li>
+      <li>Atlantic Ocean</li>
+      <li>Antarctic Ocean</li>
+      <br />
+      <a href="https://en.wikipedia.org/wiki/Ocean" target="_blank" class="learn-more">
+        <em>Click here to learn more about Oceans</em>
+      </a>
+    </p>
+
+      <button class = "globe-View">
+      Buy 3D Globe
+    </button>
+    <p class="footer">
+    Built by <a href="https://www.linkedin.com/in/sneha-thondangi/" target="_blank">Sneha</a>
+    </p>
+    </div>
+    <script>
+      function view() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let globe = prompt("Would you like to buy a Globe or Map?");
+        let age = prompt ("How old are you?");
+         if (age >= 18) {
+          alert(
+            "Thank you, " +
+            name +
+            "! We'll be in touch by email, watch out on this space!");
+        } else {
+          alert(
+            "Sorry, Please use Atlas at this time!");
+        }
+      }
+      let globeView = document.querySelector(".globe-View");
+      globeView.addEventListener("click", view);
+    </script>
+    <div class="addressdetails">
+      <span class="address"> Email: </span>
+      <span> Sneha@shecodes.io </span>
+      <span class="address"> Instagram: </span>
+      <span> @st_shecodes.io </span>
+    </div>
+  </body>
+</html>
